@@ -1,0 +1,74 @@
+/*
+Theme Name: Luna Theme
+Theme URI: https://github.com/lunaqueen/wordpress-themes/new
+Author: Luna
+Description: A theme inspired by luna.cloudns.org with fixed homepage, sidebar, and article layout.
+Version: 1.0
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E5E5E5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    padding: 10px;
+}
+
+header {
+    background-color: #A1A1A1;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    border-bottom: 2px solid #333;
+}
+
+nav {
+    background-color: #C0C0C0;
+    padding: 5px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.sidebar {
+    float: left;
+    width: 25%;
+    background-color: #F0F0F0;
+    padding: 10px;
+    border-right: 1px solid #D0D0D0;
+}
+
+.content {
+    float: right;
+    width: 72%;
+    padding: 10px;
+}
+
+.footer {
+    clear: both;
+    background-color: #A1A1A1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+a:hover {
+    color: #FF6600;
+}
