@@ -1,7 +1,7 @@
 # wordpress-themes
 WordPress建站自建主题
 文件结构
-my-custom-theme/
+lunaos/
 │-- footer.php
 │-- functions.php
 │-- header.php
