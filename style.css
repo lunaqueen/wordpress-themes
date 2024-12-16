@@ -6,69 +6,82 @@ Description: A theme inspired by luna.cloudns.org with fixed homepage, sidebar, 
 Version: 1.0
 */
 
+/* 基础样式 */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #E5E5E5;
     margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-.container {
-    width: 960px;
-    margin: 0 auto;
-    background: #FFFFFF;
-    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    overflow: hidden;
 }
 
 header {
-    background-color: #A1A1A1;
+    background-color: #333;
     color: white;
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
-    font-size: 1.2em;
-    border-bottom: 2px solid #333;
 }
 
-nav {
-    background-color: #C0C0C0;
-    padding: 5px;
+header nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-nav a {
-    color: #333;
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    padding: 5px 10px;
-    margin-right: 5px;
 }
 
-.sidebar {
-    float: left;
-    width: 25%;
-    background-color: #F0F0F0;
-    padding: 10px;
-    border-right: 1px solid #D0D0D0;
-}
-
-.content {
-    float: right;
-    width: 72%;
-    padding: 10px;
-}
-
-.footer {
-    clear: both;
-    background-color: #A1A1A1;
+footer {
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-h1, h2 {
-    color: #444;
+/* 动态元素样式 */
+.spring-petal, .summer-rain, .autumn-leaf, .winter-snow {
+    position: fixed;
+    top: -10px;
+    animation-timing-function: linear;
 }
 
-a:hover {
-    color: #FF6600;
+.spring-petal {
+    width: 20px;
+    height: 20px;
+    background: url('images/spring_petal.png') no-repeat center/cover;
+    animation: fall 6s infinite;
+}
+
+.summer-rain {
+    width: 2px;
+    height: 20px;
+    background: lightblue;
+    animation: fall 3s infinite;
+}
+
+.autumn-leaf {
+    width: 30px;
+    height: 30px;
+    background: url('images/autumn_leaf.png') no-repeat center/cover;
+    animation: fall 5s infinite;
+}
+
+.winter-snow {
+    width: 15px;
+    height: 15px;
+    background: url('images/winter_snow.png') no-repeat center/cover;
+    animation: fall 6s infinite;
+}
+
+@keyframes fall {
+    from { transform: translateY(0); }
+    to { transform: translateY(100vh) rotate(360deg); }
 }
