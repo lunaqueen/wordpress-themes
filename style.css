@@ -1,0 +1,87 @@
+/*
+Theme Name: Luna Theme
+Theme URI: https://github.com/lunaqueen/wordpress-themes/new
+Author: Luna
+Description: A theme inspired by luna.cloudns.org with fixed homepage, sidebar, and article layout.
+Version: 1.0
+*/
+
+/* 基础样式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 动态元素样式 */
+.spring-petal, .summer-rain, .autumn-leaf, .winter-snow {
+    position: fixed;
+    top: -10px;
+    animation-timing-function: linear;
+}
+
+.spring-petal {
+    width: 20px;
+    height: 20px;
+    background: url('images/spring_petal.png') no-repeat center/cover;
+    animation: fall 6s infinite;
+}
+
+.summer-rain {
+    width: 2px;
+    height: 20px;
+    background: lightblue;
+    animation: fall 3s infinite;
+}
+
+.autumn-leaf {
+    width: 30px;
+    height: 30px;
+    background: url('images/autumn_leaf.png') no-repeat center/cover;
+    animation: fall 5s infinite;
+}
+
+.winter-snow {
+    width: 15px;
+    height: 15px;
+    background: url('images/winter_snow.png') no-repeat center/cover;
+    animation: fall 6s infinite;
+}
+
+@keyframes fall {
+    from { transform: translateY(0); }
+    to { transform: translateY(100vh) rotate(360deg); }
+}
